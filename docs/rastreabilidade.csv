@@ -1,0 +1,9 @@
+Requisito,Descrição,Modelo,Código,Teste,Evidência
+REQ-CTRL-AA-001,Erro estacionário nulo em degrau,Malha de posição,model.py e controller.py,Simulação de degrau a completar,Erro final medido
+REQ-CTRL-AA-002,Sobressinal <=8%,Modelo de malha fechada,controller.py,Teste de pico a completar,Sobressinal calculado
+REQ-CTRL-AA-003,Acomodação <=300 ms,Modelo de malha fechada,controller.py,Teste de acomodação a completar,Tempo dentro da banda
+REQ-CTRL-AA-004,Tensão <=48 V e corrente <=8 A,Planta e saturação,model.py e controller.py,test_controller.py,Tensão limitada; corrente requer teste dinâmico
+REQ-SAFE-AA-001,Torque zero <=100 ms,Orçamento temporal,safety.py,test_safety.py,189 combinações; pior caso 24 ms
+REQ-SAFE-AA-002,Rearme explícito,Autômato finito,safety.py,test_safety.py,Não retoma sem reset
+REQ-SAFE-AA-003,Retomar após área livre e rearme,Autômato finito,safety.py,test_safety.py,Transição condicionada e revalidação
+REQ-SAFE-AA-004,Velocidade do efetuador <=250 mm/s,Cinemática e supervisão,model.py,Teste de velocidade a completar,Exige geometria completa do efetuador

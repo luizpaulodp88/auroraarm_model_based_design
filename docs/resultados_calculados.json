@@ -1,0 +1,44 @@
+{
+  "operating_point": {
+    "current_A": 3.7352941176470584,
+    "voltage_V": 41.23823529411764,
+    "voltage_margin_V": 6.7617647058823565,
+    "current_margin_A": 4.264705882352942,
+    "feasible_voltage": true,
+    "feasible_current": true
+  },
+  "time_constants": {
+    "tau_e_s": 0.0014999999999999998,
+    "tau_m_approx_s": 2.8000000000000003,
+    "eigenvalues_per_s": [
+      0.0,
+      -22.615172840353125,
+      -644.4086366834565
+    ]
+  },
+  "matrix_ranks": {
+    "controllability_rank": 3,
+    "observability_rank": 3
+  },
+  "deadline": {
+    "combinations": 189,
+    "all_pass": true,
+    "worst_case_ms": 24,
+    "worst_case": [
+      20,
+      2,
+      2,
+      24,
+      true
+    ],
+    "deadline_ms": 100
+  },
+  "coverage": {
+    "states_total": 4,
+    "states_covered": 4,
+    "transitions_total": 4,
+    "transitions_covered": 4,
+    "state_coverage": 1.0,
+    "transition_coverage": 1.0
+  }
+}
